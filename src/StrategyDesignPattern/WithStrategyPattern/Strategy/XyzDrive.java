@@ -1,4 +1,4 @@
-package WithStrategyPattern.Strategy;
+package StrategyDesignPattern.WithStrategyPattern.Strategy;
 
 public class XyzDrive implements DriveStrategy {
 

@@ -1,4 +1,4 @@
-package WithOutStrategyPattern;
+package StrategyDesignPattern.WithStrategyPattern.WithOutStrategyPattern;
 
 public class Vehicle {
 
