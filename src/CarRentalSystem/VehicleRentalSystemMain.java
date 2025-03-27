@@ -18,6 +18,9 @@ public class VehicleRentalSystemMain {
         Store store = vehicleRentalSystem.findStoreByLocation(new Location("123 Main St", "New York", "NY", "10001"));
         List<Vehicle> relatedVehicles = store.getVehicleBasedOnVehicleType(VehicleType.CAR);
         Reservation reservation = store.createReservation(relatedVehicles.get(0), users.get(0), new Location("456 Elm St", "Los Angeles", "CA", "90001"));
+        Bill bill = new Bill(reservation, 100.0, false);    // Generate bill and mark reservation as paid
+        Payment payment = new Payment(bill);   // Process payment and update bill status
+        store.completeTripOrProcess(reservation, bill);
     }
 
     private static List<User> addUsers() {

@@ -18,6 +18,6 @@ public class VehicleRentalSystem {
                 return store;
             }
         }
-        return null;
+        return stores.get(0);
     }
 }

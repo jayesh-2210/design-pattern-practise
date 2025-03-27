@@ -30,4 +30,16 @@ public class Reservation {
         this.reservationStatus = reservationStatus;
     }
 
+    public void setReservationStatus(ReservationStatus reservationStatus) {
+        this.reservationStatus = reservationStatus;
+    }
+    // getters and setters for all fields
+
+    // Other methods for reservation status updates and calculations
+    // Example: calculateTotalRentalCost()
+    // Example: updateReservationStatus()
+    // Example: cancelReservation()
+
+
+
 }

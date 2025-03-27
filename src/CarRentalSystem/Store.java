@@ -49,5 +49,13 @@ public class Store {
         reservations.add(reservation);
         return reservation;
     }
+
+    public void completeTripOrProcess(Reservation reservation, Bill bill) {
+        // Update the reservation status and calculate the total cost
+        reservation.setReservationStatus(ReservationStatus.COMPLETED);
+        // Calculate the total cost based on the booking duration and rates
+        bill.setPaid(true);
+        // Add the bill to the user's account
+    }
 }
 
