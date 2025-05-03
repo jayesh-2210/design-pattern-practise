@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Directory implements FileSystem {
 
-    private String directoryName;
-    private List<FileSystem> fileSystems;
+    private final String directoryName;
+    private final List<FileSystem> fileSystems;
 
     public Directory(String directoryName) {
         this.directoryName = directoryName;
