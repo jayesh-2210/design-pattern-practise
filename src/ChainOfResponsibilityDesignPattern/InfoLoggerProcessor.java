@@ -11,7 +11,7 @@ public class InfoLoggerProcessor extends LoggerProcessor  {
         if (level == INFO) {
             System.out.println("INFO: " + message);
         } else {
-            nextLoggerProcessor.logInfo(level, message);
+            super.logInfo(level, message);
         }
     }
 }
